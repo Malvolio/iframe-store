@@ -19,6 +19,18 @@ different level of trust.  All four sites are running the same code,
 but get different sorts of behavior.  The trusted site, although
 coming from a different domain
 
+# TO RUN
+
+Add the following to the /etc/hosts
+127.0.0.1	localhost-trusted.portal.com
+127.0.0.1	localhost-partner.portal.com
+127.0.0.1	localhost-untrusted.portal.com
+
+and then run with
+
+ng serve --disable-host-check
+
+
 # TO DO
 
 * make the installation of the security filters more explicit

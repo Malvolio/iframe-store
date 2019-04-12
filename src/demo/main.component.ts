@@ -18,14 +18,14 @@ const asApp = company => ({ company });
  <portal-member 
      [messagesDown]="store"
      [messagesUp]="store"
-     src="http://localhost-trusted:4200/sub"></portal-member>
+     src="http://localhost-trusted.portal.com:4200/sub"></portal-member>
  <portal-member 
      [messagesDown]="protectedOut"
      [messagesUp]="partnerIn"
-     src="http://localhost-partner:4200/sub"></portal-member>
+     src="http://localhost-partner.portal.com:4200/sub"></portal-member>
  <portal-member 
      [messagesDown]="protectedOut"
-     src="http://localhost-untrusted:4200/sub"></portal-member>
+     src="http://localhost-untrusted.portal.com:4200/sub"></portal-member>
 `,
   styles: [
     '.site-card { background-color: rgb(250, 250, 258); }',
